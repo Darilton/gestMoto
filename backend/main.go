@@ -1,21 +1,12 @@
 package main
 
 import (
+	"gestmoto/router"
 	"fmt"
-
-	"net/http"
-
-	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	r := gin.Default()
-
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "pong",
-		})
-	})
+	r := router.SetupRouter()
 
 	r.Run(":8080")
 	fmt.Println("Hello, World!")
