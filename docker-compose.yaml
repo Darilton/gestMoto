@@ -4,3 +4,9 @@ services:
     ports:
       - "8080:8080"
     command: app
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    command: npm run dev
