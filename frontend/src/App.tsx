@@ -1,14 +1,11 @@
 import './App.css'
+import Login from './pages/Login'
 
 function App() {
 
   return (
     <>
-      <div className="flex h-screen w-screen items-center justify-center">
-        <h1 className="text-3xl font-bold">
-          Hello world!
-        </h1>
-      </div>
+    <Login />
     </>
   )
 }
